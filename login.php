@@ -1,7 +1,9 @@
 <?php 
 session_start();
 
-include "db-con.php";
+require_once ("db-con.php"); 
+
+$con = openConnection(); 
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
 
